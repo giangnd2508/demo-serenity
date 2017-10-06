@@ -1,11 +1,12 @@
 package vn.codelover.steps.serenity;
 
 import net.thucydides.core.annotations.Step;
-import vn.codelover.pages.LoginPage;;
+import vn.codelover.pages.LoginPage;
+import org.openqa.selenium.WebDriver;
 
 public class LoginEndUserSteps {
 	LoginPage loginPage;
-
+	WebDriver driver;
 	@Step
 	public void entersEmail(String email) {
 		loginPage.enter_email(email);
@@ -22,7 +23,7 @@ public class LoginEndUserSteps {
 	}
 
 	@Step
-	public void should_see_error_message() {
+	public void shouldSeeErrorMessage() {
 		// assertThat(LoginPage.LOGIN_ERROR_MESSAGE, loginPage.get_Error_Message());
 		System.out.println("This is a fake error");
 	}
@@ -37,6 +38,10 @@ public class LoginEndUserSteps {
 		entersEmail(email);
 		entersPassword(password);
 		clickLoginButton();
+	}
+	@Step
+	public void shouldSeeHomePage() {
+//		assertThat();
 	}
 
 }

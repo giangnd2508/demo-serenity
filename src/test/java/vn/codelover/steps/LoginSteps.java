@@ -33,7 +33,12 @@ public class LoginSteps {
 
 	@Then("^the user sees the error \"([^\"]*)\"$")
 	public void the_user_sees_the_error(String arg1) throws Throwable {
-		loginEndUserSteps.should_see_error_message();
+		loginEndUserSteps.shouldSeeErrorMessage();;
+	}
+	
+	@Then("^the user sees the homepage$")
+	public void the_user_sees_the_homepage() throws Throwable {
+	   loginEndUserSteps.shouldSeeHomePage();
 	}
 
 }

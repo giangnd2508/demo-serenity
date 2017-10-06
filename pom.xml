@@ -11,9 +11,10 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<serenity.version>1.5.3</serenity.version>
+		<serenity.version>1.5.8</serenity.version>
 		<serenity.cucumber.version>1.5.4</serenity.cucumber.version>
-		<webdriver.driver>firefox</webdriver.driver>
+		<serenity.report.encoding>UTF-8</serenity.report.encoding>
+		
 	</properties>
 
 	<repositories>
@@ -43,6 +44,7 @@
 			<artifactId>serenity-core</artifactId>
 			<version>${serenity.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
 			<artifactId>serenity-cucumber</artifactId>
